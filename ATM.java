@@ -64,8 +64,8 @@ class ATM{
             int opt = scanner.nextInt();
 
             switch (opt) {
-                case 1 ->
-                {
+                case 1 :
+                
                     System.out.print("Enter ATM PIN: ");
                     int pin = scanner.nextInt();
                     if (pin == ATM_PIN)
@@ -79,13 +79,13 @@ class ATM{
                     {
                         System.out.println("Invalid PIN.");
                     }
-                }
-                case 2 -> {
+                
+                case 2 : 
                     System.out.print("Enter amount to deposit: ");
                     double depositAmount = scanner.nextDouble();
                     account.deposit(depositAmount);
-                }
-                case 3 -> {
+                
+                case 3 : 
                     System.out.print("Enter ATM PIN: ");
                     int pin = scanner.nextInt();
                     if (pin == ATM_PIN)
@@ -97,13 +97,13 @@ class ATM{
                     {
                         System.out.println("Invalid PIN.");
                     }
-                }
-                case 4 -> {
+                
+                case 4 : 
                     System.out.println("Thank you for using the ATM. Goodbye!");
                     scanner.close();
                     return;
-                }
-                default -> System.out.println("Invalid option. Please try again.");
+                
+                default : System.out.println("Invalid option. Please try again.");
             }
         }
     }
